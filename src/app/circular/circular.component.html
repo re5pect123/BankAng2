@@ -1,3 +1,11 @@
 <p>
-  circular works!
+    circular works!
 </p>
+<p>
+    {{happyText}}
+</p>
+<button (click)='makeHappy()'> Make me happy! </button>
+
+<ol>
+    <li *ngFor="let todo of myTodo"> {{todo}} </li>
+</ol>

@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CircularComponent implements OnInit {
 
+  public happyText = 'Happy Text';
+
+  public myTodo = [
+    'home work',
+    'sleep',
+    'private project'
+  ];
+
   constructor() { }
 
   ngOnInit() {
+  }
+  makeHappy(){
+    this.happyText = 'Manager got fired';
   }
 
 }
