@@ -3,9 +3,9 @@
 </p>
 <input type="text" (keyup)="onKeyup($event)">
 <button (click)="getUsers()"> Search </button>
-<!--<p>{{searchCount}}</p> -->
+
 <ol *ngIf="searchResult">
-    <md-card class="example-card" style="width:350px" *ngFor="let user of searchResult.items">
+    <md-card class="example-card" *ngFor="let user of searchResult.items">
         <md-card-header>
             <div md-card-avatar class="example-header-image"></div>
             <md-card-title>User</md-card-title>
@@ -27,5 +27,8 @@
 <style>
     .example-card {
         margin: 0;
+        float: left;
+        margin: 5px;
+        width: 300px;
     }
 </style>
