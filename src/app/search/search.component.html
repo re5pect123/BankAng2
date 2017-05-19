@@ -8,10 +8,12 @@
     <md-card class="example-card" *ngFor="let user of searchResult.items">
         <md-card-header>
             <div md-card-avatar class="example-header-image"></div>
-            <md-card-title>User</md-card-title>
+            <md-card-title>
+                <a md-raised-button (click)='showUserDetail(user)'>{{user.login}}</a>
+            </md-card-title>
             <md-card-subtitle>NAME</md-card-subtitle>
         </md-card-header>
-        <img [ngStyle]="{'width': '50px', 'height': '50px'}" [src]="user.avatar_url">
+        <img [ngStyle]="{'width': '150px', 'height': '150px'}" [src]="user.avatar_url">
         <md-card-content>
             <p>
                 This is product balblabla
